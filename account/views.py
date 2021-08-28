@@ -20,7 +20,7 @@ def create_user_account(request):
         else:
             return render(request, "user_already_exists_popup.html", context={})
 
-    return render(request, "Sign_up.html", context={})
+    return render(request, "sign_up.html", context={})
 
 def sign_in_user(request):
     if request.method == "POST":
