@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+        .alert.success {
+              position: relative;
+              background: #222;
+              margin: 10px 0 30px 0;
+              text-align: center;
+              padding-top: 8px;
+              padding-bottom: 8px;
+              font-size: 12px;
+              color: black;
+              background:#f78686;
+              border: 1px solid red;
+              font-family: Montserrat,Arial, Helvetica, sans-serif;
+              font-weight: 600;
+              letter-spacing: 0.05rem;
+              border-radius: 0;
+              -webkit-border-radius: 0;
+            }
+             .alert.success:before {
+
+              font-family: "FontAwesome";
+              font-size: 15px;
+              padding-right: 5px;
+              color: #436332;
+            }
+            #try-again{
+              padding: 10px;
+              outline: none;
+              background: #000f00;
+              font-family: inherit;
+              border: none;
+              font-family: Montserrat,Arial, Helvetica, sans-serif;
+              font-size: 0.9em;
+              border-radius: 2px;
+              cursor: pointer;
+              text-decoration:none;
+              color:white;
+            }
+            #try-again:hover {
+              background-color: #373738;
+            }
+    </style>
+</head>
+<body>
+    <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-12 alert success">
+            <h3>User already exists!!!</h3>
+        </div>
+
+    </div>
+
+    <a href="{% url 'create_user_account' %}" id="try-again">Try Again</a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+        .alert.success {
+              position: relative;
+              background: #222;
+              margin: 10px 0 30px 0;
+              text-align: center;
+              padding-top: 15px;
+              padding-bottom: 17px;
+              font-size: 12px;
+              color: #436332;
+              background: #E1F6D6;
+              border: 1px solid #95B684;
+              font-family: Montserrat,Arial, Helvetica, sans-serif;
+              font-weight: 600;
+              letter-spacing: 0.05rem;
+              border-radius: 0;
+              -webkit-border-radius: 0;
+            }
+             .alert.success:before {
+    <!--          content: '\f00c';-->
+              font-family: "FontAwesome";
+              font-size: 15px;
+              padding-right: 5px;
+              color: #436332;
+            }
+            #login-id{
+              padding: 10px;
+              outline: none;
+              background: #000f00;
+              font-family: inherit;
+              border: none;
+              font-family: Montserrat,Arial, Helvetica, sans-serif;
+              font-size: 0.9em;
+              border-radius: 2px;
+              cursor: pointer;
+              text-decoration:none;
+              color:white;
+            }
+            #login-id:hover {
+              background-color: #373738;
+            }
+    </style>
+</head>
+<body>
+    <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-12 alert success">
+            User Account created successfully
+        </div>
+    </div>
+    <a href="{% url 'login' %}" id="login-id">Login</a>
+</body>
+</html>
